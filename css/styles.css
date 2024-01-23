@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    background-color: #F5F5F5;
     justify-content: space-between;
   }
   .logo11{
@@ -16,6 +17,32 @@ body {
     width: 200px; /* Adjust the width as needed */
     height: auto;
     margin-right: 10px; /* Adjust the spacing as needed */
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #e38903;
+}
+
+.btn-primary:hover {
+  background: #b79b63;
+  transition: background 0.3s ease-in-out;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
 }
 
   /* Hero Grid CSS */
@@ -34,7 +61,7 @@ body {
     background-color: rgba(255,255,255,0.8);
     border-bottom: 5px solid #FF6200;
     position:absolute;
-    right: -50px;
+    right: 25px;
     top: 300px;
     padding: 25px;
     max-width: 550px;
@@ -51,7 +78,7 @@ body {
   }
   
   /* Category Grid CSS */
-  #categoryGrid {
+  .categoryGrid {
     margin: 0px 5%;
     display: grid;
     grid-template-rows: 300px 300px 300px;
@@ -62,11 +89,7 @@ body {
       "desks desks desks";
   }
   
-  /* Category Grid Areas */
-  #appetizers, #desserts, #mainCourse, #drinks, #specials {
-    grid-area: bookcases; /* Change the respective grid areas */
-    background-image: url("../images/hopi.jpg"); /* Change the respective background images */
-  }
+ 
   #appetizers {
     grid-area: bookcases;
     background-image: url("../images/hopi.jpg");
@@ -78,17 +101,17 @@ body {
   
   #mainCourse {
     grid-area: couches;
-    background-image: url("../images/hopi3.png");
+    background-image: url("https://www.seriouseats.com/thmb/DrWm_ZAvP3nKi82DGtakeVJwt5U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2015__03__20150310-sichuan-wonton-chili-oil-recipe-new-1-267bae64def94fa9961b98aaa6bf302d.jpg");
   }
   
   #drinks {
     grid-area: patio;
-    background-image: url("../images/drinks.jpg");
+    background-image: url("https://www.halfbakedharvest.com/wp-content/uploads/2020/11/Spiced-Honey-Bourbon-Old-Fashioned-1.jpg");
   }
   
   #specials {
     grid-area: desks;
-    background-image: url("../images/specials1.jpg");
+    background-image: url("https://i.insider.com/5c793e57bde70f6a30347a53?width=1136&format=jpeg");
   }
   
   .categoryGridArea {
@@ -119,6 +142,8 @@ body {
     align-items: center;
     padding: 5px;
     justify-content: space-evenly;
+    border-radius: 8px;
+    margin-bottom: 10px;
   }
   
   #navBar h1 {
@@ -155,7 +180,7 @@ body {
   
   /* Typography CSS */
   h2 {
-    font-size: 60px;
+
     margin: 0px 0px;
     color: #FF6200;
   }
@@ -220,16 +245,7 @@ body {
     }
   }
   
-  /* Footer CSS */
-  footer {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  
   
   /* Promotions Section */
   #promotions {
@@ -304,10 +320,18 @@ body {
   /* Feedback Section */
   #feedback {
     text-align: center;
+    padding: 5rem 0;
+  background: rgba(243, 243, 243);
   }
-  
+  .testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+  }
   .feedback-box {
     margin: 20px;
+    
   }
   
   .feedback-box img {
@@ -371,3 +395,312 @@ body {
     color: #FF6200;
     filter: blur(1px);
   }
+
+  /* Add these styles to your CSS file */
+
+footer {
+  
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+
+
+.footer-map iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+
+.footer1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/* ......//about us//...... */
+
+#about {
+  padding: 50px 0;
+  background: #f5f5f7;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+/* ........ Contact Us........... */
+
+#contact {
+  padding: 5rem 0;
+  background: rgb(226, 226, 226);
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form-container a {
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}
+
+/* ..........////Food category///........... */
+
+#food {
+  padding: 5rem 0 10rem 0;
+}
+
+#food h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.img-content a {
+  font-size: 1rem;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+}
+
+/* .........../Food Menu/............ */
+
+.food-menu-heading {
+  text-align: center;
+  color: #666;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.font-title {
+  color: #444;
+}
+
+.food-description p {
+  color: #555;
+}
+
+.food-description .food-price {
+  color: #117964;
+}
