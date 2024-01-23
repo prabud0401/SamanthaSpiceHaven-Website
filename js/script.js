@@ -80,3 +80,31 @@ function openEmailClient() {
     // Open the user's default email client
     window.location.href = mailtoLink;
 }
+
+// Add the following JavaScript code for smooth scrolling
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling for anchor links
+    const scrollLinks = document.querySelectorAll('.nav-link');
+    
+    scrollLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop - 50, // Adjust for header height
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Form submission
+    const submitButton = document.querySelector('.btn-primary');
+    submitButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Replace the alert with your actual form submission logic
+        alert('Form submitted!');
+    });
+});

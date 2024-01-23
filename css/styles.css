@@ -356,6 +356,9 @@ body {
     .cont {
       flex-direction: column;
     }
+    .services-container {
+      justify-content: center;
+  }
     .cont iframe {
       width: 250px;
       height: 250px;
@@ -557,7 +560,11 @@ footer {
   padding: 1rem 0;
   resize: none;
 }
-
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
 .form-container h2 {
   font-size: 2.7rem;
   font-weight: 500;
@@ -703,4 +710,49 @@ footer {
 
 .food-description .food-price {
   color: #117964;
+}
+
+/* Services Section Styles */
+#services {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  text-align: center;
+  margin: 20px;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service h2 {
+  margin: 20px 0;
+}
+
+.service p {
+  color: #666;
+}
+/* Add fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
