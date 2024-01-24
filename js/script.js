@@ -1,24 +1,6 @@
 // script.js
 
-// JavaScript function to change the background color periodically
-function changeBackgroundColor() {
-    const navBar = document.getElementById('navBar');
-    const footer = document.querySelector('footer-bottom');
-    const elements = [navBar, footer];
 
-    const colors = ['#FFD700', '#FF6347', '#00FF7F', '#8A2BE2']; // Add more colors as needed
-    let index = 0;
-
-    setInterval(() => {
-        for (const element of elements) {
-            element.style.backgroundColor = colors[index];
-        }
-        index = (index + 1) % colors.length;
-    }, 3000); // Change color every 3 seconds (adjust the time interval as needed)
-}
-
-// Call the function when the page loads
-window.onload = changeBackgroundColor;
 
 
 
